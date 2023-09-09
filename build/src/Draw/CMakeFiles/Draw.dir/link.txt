@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/libDraw.a CMakeFiles/Draw.dir/DrawPS.cpp.o
+/usr/bin/ranlib ../../../lib/libDraw.a

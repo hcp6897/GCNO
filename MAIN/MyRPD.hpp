@@ -51,7 +51,7 @@ typedef CGAL::Regular_triangulation_3<K_P>               Rt;
 using namespace std;
 
 //vector<int> Repeat;
-double gamma = 0.00000000001;
+// double gamma = 0.00000000001;
 
 double FeatureWeight = 0.005, noFeatureWeight = 0.005;
 //double FeatureWeight = 0.03, noFeatureWeight = 0.01;
@@ -77,8 +77,8 @@ struct MyPoint
 
     bool operator<(const MyPoint& a) const
     {
-
-
+        // here we define the gamma in the local
+        double gamma = 0.00000000001;
 
         double dis = (p - a.p).norm();
         if (dis < gamma)

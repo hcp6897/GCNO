@@ -212,7 +212,8 @@ namespace BGAL
         iterX = iX;
         break;
       }
-      step = isinf(step_u) ? 2 * step : 0.5 * (step_l + step_u);
+      // step = isinf(step_u) ? 2 * step : 0.5 * (step_l + step_u);
+      step = std::isinf(step_u) ? 2 * step : 0.5 * (step_l + step_u);
       //step /= 10;
     }
     return k;

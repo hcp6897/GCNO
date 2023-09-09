@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/libReconstruction.a CMakeFiles/Reconstruction.dir/MarchingTerahedra/MarchingTetrahedra.cpp.o
+/usr/bin/ranlib ../../../lib/libReconstruction.a

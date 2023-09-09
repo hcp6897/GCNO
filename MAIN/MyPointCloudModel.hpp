@@ -9,7 +9,8 @@
 #include <iomanip>
 #include <string>
 #include <sstream>
-#include <Eigen\dense>
+// #include <Eigen\dense>
+#include <eigen3/Eigen/Dense>
 
 using namespace std;
 class MyPointCloudModel

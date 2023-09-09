@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/libPointCloudProcessing.a CMakeFiles/PointCloudProcessing.dir/Registration/ICP/ICP.cpp.o
+/usr/bin/ranlib ../../../lib/libPointCloudProcessing.a

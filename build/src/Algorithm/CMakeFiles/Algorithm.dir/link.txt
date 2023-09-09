@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/libAlgorithm.a CMakeFiles/Algorithm.dir/BOC/BOC.cpp.o
+/usr/bin/ranlib ../../../lib/libAlgorithm.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/libCVTLike.a CMakeFiles/CVTLike.dir/CPD.cpp.o CMakeFiles/CVTLike.dir/CVT.cpp.o
+/usr/bin/ranlib ../../../lib/libCVTLike.a
