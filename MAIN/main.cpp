@@ -35,7 +35,6 @@ typedef Eigen::SparseMatrix<double> SpMat;
 typedef Eigen::Triplet<double> T;
 
 
-
 pair<double, double>  V3toV2(Eigen::Vector3d nor)
 {
 	double u = 0.0, v = 0.0;
@@ -106,15 +105,9 @@ pair<double, double>  V3toV2(Eigen::Vector3d nor)
 	return p;
 }
 
-
-
-
 double PI = 3.1415926535;
 void WindingNumLBFGSTest(string modelpath, string model, vector<vector<Eigen::Vector3d>> VDPs, pair<vector<double>, map<MyPoint, set<MyPoint>>> areasNeibor,bool Ifdoublelyer)
 {
-
-
-	
 	clock_t start, end;
 	ifstream inNewPs(modelpath + model + ".xyz");
 	vector<Eigen::Vector3d> Vall;
@@ -209,9 +202,6 @@ void WindingNumLBFGSTest(string modelpath, string model, vector<vector<Eigen::Ve
 	cout << "Total Query points : " << Totn << " After QuChong n: " << Qcn << endl;
 
 
-
-
-
 	int fgNum = 0;
 	std::function<double(const Eigen::VectorXd& X, Eigen::VectorXd& g)> fg
 		= [&](const Eigen::VectorXd& X, Eigen::VectorXd& g)
@@ -273,14 +263,6 @@ void WindingNumLBFGSTest(string modelpath, string model, vector<vector<Eigen::Ve
 		WdInsideVec.resize(Insn);
 		WdOutsideVec.resize(Outsn);
 
-
-
-
-
-
-
-
-		
 		
 #pragma omp parallel for //schedule(dynamic, 5)	
 		for (int i = 0; i < n; ++i)  // compute winding number
@@ -561,7 +543,7 @@ int main()
 	// A noise-free point cloud generally requires about 50 iterations, and a noisy point cloud may require more.
 
 
-	string modelpath = "..\\..\\data\\";
+	string modelpath = "../../data/";
 	string modelname;
 	omp_set_num_threads(28);
 	{

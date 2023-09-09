@@ -117,7 +117,11 @@ endif()
 ```
 ### The executed results
 
-<img src="pics\ubuntu22.04.png" alt="ubuntu22.04" style="zoom:40%;" />
+<img src="pics\01.png" alt="01" style="zoom:40%;" />
+
+<img src="pics\02.png" alt="02" style="zoom:40%;" />
+
+<img src="pics\03.png" alt="03" style="zoom:40%;" />
 
 ### Important Tips: 
 
