@@ -95,6 +95,27 @@ Properties -> Configuration Properties -> C/C++ -> Language -> Open MP Support :
 - The result of operations are in `NormalOrientation\data\MyResult\`, for checking whether the program is running correctly.
 
 
+
+## Compile and Test in Ubuntu22.04
+
+### Compile 
+We compile this project in following:
+```bash
+mkdir build
+cd build
+cmake ..
+make -j8
+```
+We modified a small compiled errors and add this into CMakelists.txt:
+```
+find_package( OpenMP REQUIRED)
+if(OPENMP_FOUND)
+    message("OPENMP FOUND")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
+endif()
+```
+
 ### Important Tips: 
 
 💡💡💡 **Speed**
